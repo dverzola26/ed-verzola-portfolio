@@ -10,7 +10,6 @@ import { restorePrefs } from '@/lib/a11y'
 // Every route but Home is its own chunk: the first visit only pays for Home.
 const ProjectsView = lazy(() => import('@/components/PersonalProjects'))
 const ServicesView = lazy(() => import('@/components/ServicesGrid'))
-const ShowcaseView = lazy(() => import('@/components/PersonalDemo'))
 const AboutGrid = lazy(() => import('@/components/PersonalAbout'))
 const ContactGrid = lazy(() => import('@/components/PersonalContact'))
 import './styles/tokens.css'
@@ -28,7 +27,6 @@ import './styles/home.css'
 import './styles/bento.css'
 import './styles/projects-grid.css'
 import './styles/services-grid.css'
-import './styles/showcase.css'
 import './styles/testimonials-grid.css'
 import './styles/about-grid.css'
 import './styles/contact-grid.css'
@@ -67,8 +65,8 @@ root.render(
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsView />} />
           <Route path="/services" element={<ServicesView />} />
-          <Route path="/showcase" element={<ShowcaseView />} />
-          <Route path="/demo" element={<ShowcaseView />} />
+          <Route path="/showcase" element={<Navigate to="/projects" replace />} />
+          <Route path="/demo" element={<Navigate to="/projects" replace />} />
           <Route path="/about" element={<AboutGrid />} />
           <Route path="/contact" element={<ContactGrid />} />
         </Route>

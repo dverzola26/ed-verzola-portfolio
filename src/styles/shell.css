@@ -5,10 +5,9 @@
    and only `#main-content` scrolls. Home is the one view sized to fit that
    box exactly, so it does not scroll at all.
 
-   Consequence worth remembering: every scroll read has to go through
-   `#main-content`, never the window. Lenis is constructed with
-   wrapper/content and ScrollTrigger gets `scroller` defaults - see
-   useLenis.ts and useScrollFX.ts.
+   Consequence worth remembering: every desktop scroll happens natively inside
+   `#main-content`, never the window. Avoid intercepting wheel or trackpad
+   gestures here; the browser owns scrolling.
 
    Below 1100px the shell dissolves: the rail is hidden, NavBar's floating
    pill is the navigation and the document scrolls natively. A 1000px-wide
@@ -39,6 +38,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: contain;
+    -webkit-overflow-scrolling: touch;
     scrollbar-width: thin;
     scrollbar-color: var(--line-strong) transparent;
   }

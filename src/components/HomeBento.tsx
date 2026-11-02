@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, FolderOpen, ListChecks, Robot, Cloud, Stack, ChatCircle } from '@/components/slab'
 const cards=[
- {to:'/projects',slot:'projects',Icon:FolderOpen,title:'Projects',desc:'Self-initiated prototypes. Open the work and see its limits.',image:'/projects/inquiry-demo.webp'},
+ {to:'/projects',slot:'projects',Icon:FolderOpen,title:'Projects',desc:'Personal work in automation and web development.',image:'/projects/inquiry-demo.webp'},
  {to:'/services',slot:'method',Icon:ListChecks,title:'How I work',desc:'A clear scope, regular reviews and a documented handover.',points:['Understand the task','Agree on the scope','Build, test & hand over']},
- {to:'/demo',slot:'ai',Icon:Robot,title:'Try a sample',desc:'Inquiry capture, duplicate checks and human review.',points:['Synthetic data','Browser-only demo','No messages sent']},
+ {to:'/services',slot:'ai',Icon:Robot,title:'Automation focus',desc:'Practical workflows built around the way your team works.',points:['n8n workflows','APIs & webhooks','Human review where it matters']},
  {to:'/services',slot:'creds',Icon:Cloud,title:'Cloud consulting',desc:'Architecture reviews, reliability and prioritized recommendations.',points:['Defined scope','Practical recommendations','Documented handover']},
  {to:'/services',slot:'services',Icon:Stack,title:'Services',desc:'A focused first project for a small business.',points:['Inquiry capture & follow-up','APIs & webhook integrations','Custom apps & dashboards']},
  {to:'/contact',slot:'quotes',Icon:ChatCircle,title:'Let’s talk',desc:'Tell me where inquiries get stuck. We can scope a useful next step.',points:['WhatsApp: +63 917 142 0582','dverzola26@gmail.com','Philippines · Working worldwide']},

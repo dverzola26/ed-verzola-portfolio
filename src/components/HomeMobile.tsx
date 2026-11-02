@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { Stack, Robot, ChatCircle } from '@/components/slab'
+import { Stack, User, ChatCircle } from '@/components/slab'
 import { profile } from '@/data/profile'
 import QuickMenu from './QuickMenu'
 
@@ -47,9 +47,9 @@ export function HomeStats() {
 }
 
 const TILES = [
-  { n: '01', label: 'Projects', to: '/projects', title: 'Working browser prototypes', desc: 'Self-initiated work, clearly labeled.', img: '/projects/inquiry-demo.webp' },
+  { n: '01', label: 'Projects', to: '/projects', title: 'Automation and web work', desc: 'Personal projects with a clear purpose.', img: '/projects/inquiry-demo.webp' },
   { n: '02', label: 'Services', to: '/services', title: 'Start with one workflow', desc: 'A defined scope and documented handover.', Icon: Stack },
-  { n: '03', label: 'Sample demo', to: '/demo', title: 'Try a sample inquiry', desc: 'Synthetic data. No live messages.', Icon: Robot, accent: true },
+  { n: '03', label: 'About', to: '/about', title: 'Cloud experience, practical delivery', desc: 'How I approach automation and consulting.', Icon: User },
   { n: '04', label: 'Contact', to: '/contact', title: 'Let’s scope your first workflow.', desc: 'Tell me what you want to simplify.', Icon: ChatCircle },
 ] as const
 

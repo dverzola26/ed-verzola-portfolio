@@ -6,9 +6,10 @@ import ThemeButton from '@/components/ThemeButton'
 import CursorRing from '@/components/CursorRing'
 import AccessMenu from '@/components/AccessMenu'
 import { motionReduced } from '@/lib/a11y'
-import { useLenis, SCROLLER_ID } from '@/hooks/useLenis'
 import { useIsPhone } from '@/hooks/useMediaQuery'
 import { getPerfTier, watchFrameHealth, PERF_TIER_EVENT } from '@/lib/perf'
+
+const SCROLLER_ID = 'main-content'
 
 // Lazy-load HeroCanvas so the 118KB Three.js bundle is fetched only
 // when actually needed. Mobile + reduced-motion users skip the import
@@ -27,8 +28,6 @@ const HeroCanvas = lazy(() => import('@/components/HeroCanvasV2'))
  * Testimonials, About and Contact are built to the same budget and join it.
  */
 export default function App() {
-  useLenis()
-
   const { pathname } = useLocation()
   const FIXED_ROUTES = ['/']
   const isFixed = FIXED_ROUTES.includes(pathname)
@@ -44,7 +43,7 @@ export default function App() {
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: 'auto' })
     window.scrollTo({ top: 0, behavior: 'instant' })
-    const titles: Record<string, string> = { '/': 'AI Automation & Integrations', '/projects': 'Projects', '/services': 'Services', '/demo': 'Sample inquiry demo', '/showcase': 'Sample inquiry demo', '/about': 'About', '/contact': 'Contact' }
+    const titles: Record<string, string> = { '/': 'AI Automation & Integrations', '/projects': 'Projects', '/services': 'Services', '/about': 'About', '/contact': 'Contact' }
     document.title = `${titles[pathname] ?? 'Portfolio'} — Ed David Verzola`
     panelRef.current?.focus({ preventScroll: true })
   }, [pathname])

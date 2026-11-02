@@ -9,7 +9,7 @@ import Autopilot, { TOOLS } from '@/components/Autopilot'
  *
  * Three bands, top to bottom: your three-step method (on a dark plate so it
  * is the first thing the eye lands on), the five services as cards that carry
- * the marks of what each one is built with, and the live automation demo
+ * the marks of what each one is built with, and the automation workflow
  * scaled into whatever height is left. Same object language as Home and
  * Projects: the glass, the bento card, plated marks, orange for the index
  * and the accent.
@@ -174,15 +174,15 @@ export default function ServicesGrid() {
           </ul>
         </div>
 
-        {/* The live workflow. Its caption and the tool chips sit in a header
+        {/* The workflow. Its caption and the tool chips sit in a header
             above the window, so the canvas gets the whole glass width. */}
         <div className="sgrid__flow">
           <header className="sgrid__flow-head">
             <div className="sgrid__flow-copy">
-              <span className="sgrid__flow-eyebrow">Browser simulation</span>
-              <h2 className="sgrid__flow-title">A workflow concept to explore.</h2>
+              <span className="sgrid__flow-eyebrow">Typical workflow</span>
+              <h2 className="sgrid__flow-title">From inquiry to a clear next step.</h2>
               <p className="sgrid__flow-sub">
-                This template animation illustrates a workflow. It is not a connected client system. <Link to="/demo" className="native-inline-link">Try the inquiry demo</Link> for a working browser prototype.
+                Capture the request, check the details, notify the right person and keep follow-up visible. The final workflow is adapted to your business and tools.
               </p>
             </div>
             <ul className="sgrid__flow-tools" role="list" aria-label="Illustrated tools in this concept">

@@ -34,24 +34,23 @@ The earlier implementation recreated the template in Next.js and reused only a s
 - `src/components/PersonalProjects.tsx`: self-initiated project cards using original grid classes.
 - `src/components/PersonalAbout.tsx`: background and process using the original About layout.
 - `src/components/PersonalContact.tsx`: original FAQ/form layout with real contact links. It opens an email draft; it does not send from this website.
-- `src/components/PersonalDemo.tsx`: browser-only inquiry prototype carried forward.
 - `src/styles/personalization.css`: the only added stylesheet. All upstream stylesheets remain intact; content, portrait rendering, monochrome accent, global icon-only theme control and sidebar collapse are adjusted here.
 
-Native routes: `/`, `/projects`, `/services`, `/about`, `/contact`, `/demo`. `/showcase` also opens the sample. Unconfigured testimonial/legal pages are not linked or exposed as routes. The original startup intro overlay is disabled because navigation during it could leave the page hidden. No new animation system was introduced.
+Native routes: `/`, `/projects`, `/services`, `/about`, `/contact`. The retired `/demo` and `/showcase` URLs redirect to Projects. Unconfigured testimonial/legal pages are not linked or exposed as routes. The original startup intro overlay is disabled because navigation during it could leave the page hidden. No new animation system was introduced.
 
-## Demo and contact limits
+## Project and contact limits
 
-The demo uses synthetic browser-local data. Validation, duplicates, review gating and follow-up flags work locally. Alerts, response drafts, contact status and time passing are simulated. No live n8n, LLM, email or WhatsApp integration is connected. No results, certifications, testimonials or paid-client work are invented. The portfolio screenshot records the earlier v1.1 implementation.
+Projects are identified as self-initiated portfolio work. No results, certifications, testimonials or paid-client work are invented. Paid client case studies should be added only with permission. The portfolio screenshot records the earlier v1.1 implementation.
 
 Email: dverzola26@gmail.com. WhatsApp: +63 917 142 0582. LinkedIn and OnlineJobs.ph are the user-provided links. The contact form opens the visitor's email app; it does not verify delivery. No environment variables are needed. Do not configure `VITE_CONTACT_ENDPOINT` until a real delivery backend is approved and tested.
 
-## Deployment, only after approval
+## Deployment
 
-No domain, deployment or remote repository was created. If later approved, use the Vite preset in Vercel, install `npm ci`, build `npm run build`, output `dist`. The included `vercel.json` provides SPA route fallback. Update final canonical/social URLs in `index.html` after a domain is chosen. Test direct navigation and refresh on every route. Check current hosting-plan terms before enabling a service.
+Production: https://ed-verzola-portfolio.vercel.app/. Vercel uses the Vite preset, installs with `npm ci`, builds with `npm run build`, and serves `dist`. The included `vercel.json` provides SPA route fallback. Update final canonical/social URLs in `index.html` after a custom domain is chosen. Test direct navigation and refresh on every route after each deployment.
 
 For GitHub, create an approved empty repository, initialize this folder as its root after checking for parent repositories, then commit and push. The included CI checks Node 24 installation, lint and build. Do not push the untouched upstream clone or the older workspace by accident.
 
-Before launch: record a captioned demo video, complete a private n8n integration before claiming it works end to end, review source screenshots and metadata, and verify mail composition on a real device.
+Before adding an automation case study: complete and test the workflow privately, capture clear screenshots or a short walkthrough, and state only results that can be substantiated. Verify mail composition on a real device.
 
 ## License and provenance
 
@@ -66,9 +65,9 @@ Compatible dependency updates were applied with npm audit fix; the resulting aud
 
 ## Toolkit and review corrections — 28 October 2026
 
-The toolkit now lists Codex, Claude, n8n, Zapier and Azure. The Azure SVG is sourced from [Microsoft's documentation repository](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/media/common/logo_azure.svg); brand assets remain owned by their respective owners. Skill development is described on About rather than appended to toolkit names.
+The toolkit lists Codex, Claude, n8n and Azure. The Azure SVG is sourced from [Microsoft's documentation repository](https://github.com/MicrosoftDocs/entra-docs/blob/main/docs/identity-platform/media/common/logo_azure.svg); brand assets remain owned by their respective owners.
 
-Review fixes: sidebar background follows its collapsed width; collapse button clears the portrait; footer clears the accessibility control; contact links use consistent library icons without duplicate social rows; WhatsApp is the primary contact link; native required-field/email validation is restored; mobile Home has a direct consultation CTA; page titles and route scroll/focus reset are updated; the demo uses an H1 and automation icon. The unused legacy thank-you URL redirects to Contact, removing its unsubstantiated delivery/reply promises.
+Review fixes: sidebar background follows its collapsed width; collapse button clears the portrait; footer clears the accessibility control; contact links use consistent library icons without duplicate social rows; WhatsApp is the primary contact link; native required-field/email validation is restored; mobile Home has a direct consultation CTA; page titles and route scroll/focus reset are updated. The unused legacy thank-you URL redirects to Contact, removing its unsubstantiated delivery/reply promises.
 
 ## Work from another computer
 
@@ -107,5 +106,9 @@ Dependencies, generated `dist`, logs, and local environment files are excluded f
 ## Portrait and Home refinement — 2 November 2026
 
 The toolkit strip shows Azure, Codex, Claude and n8n. n8n is presented as the automation focus, with service-focused copy and no learning labels. Zapier is omitted. The Home bio/photo card is replaced with a process card, while mobile Explore links to Contact rather than repeating the photo.
+
+## Portfolio cleanup and scrolling — 2 November 2026
+
+The sample/demo route and promotional demo links were retired. Home, Projects, Services, About and FAQs now read as a focused portfolio, while self-initiated work remains labeled honestly. Desktop scrolling uses the browser's native scroll behavior so Mac trackpad gestures, mouse wheels and scrollbars all operate the same panel without a JavaScript scroll interceptor.
 
 The About portrait uses `public/ed-portrait-transparent.png`, generated with the built-in image tool from the original `public/profile.png`. The original remains preserved and is used for the small identity avatar. Image prompt: “Remove only the gray-blue background to genuine transparency; preserve Ed's identity, expression, hair, suit and photographic detail; show the entire head and shoulders without cropping, with no added background or text.” The About layout now uses the image's natural aspect ratio and a contained, width-limited portrait on mobile and desktop.
