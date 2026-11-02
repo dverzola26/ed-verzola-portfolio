@@ -46,3 +46,12 @@
 .agrid .agrid__portrait img{width:100%;height:auto;max-width:440px;max-height:none;object-fit:contain;object-position:center;mask:none;-webkit-mask:none;border-radius:0}
 .bento__card--method .native-points{margin-top:auto}
 @media(max-width:1099px){.agrid .agrid__glass{min-height:0}.agrid .agrid__portrait{max-width:320px;margin-inline:auto}.agrid .agrid__portrait img{width:100%;height:auto;max-height:none}}
+/* The FAQ panel stays dark in both themes; links must use its local ink tokens. */
+.cgrid__aside{--ink-muted:#b7c1d3;--ink-line:#4a5670}
+.cgrid__aside .native-contact-links a{color:var(--ink)}
+.cgrid__aside .native-contact-primary small{color:var(--ink-muted)}
+.cgrid__aside .native-contact-primary{border-color:var(--ink-line)}
+.cgrid__aside .native-contact-links a:focus-visible{outline-color:var(--ink)}
+.cgrid__aside .cgrid__eyebrow,.cgrid__aside .cgrid__step-index,.cgrid__aside .cgrid__faq-caret{color:var(--ink-muted)}
+.cgrid__aside .cgrid__faq.is-open .cgrid__faq-caret{color:var(--ink)}
+.cgrid__aside .native-contact-primary{border-color:#63718b}
