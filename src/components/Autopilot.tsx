@@ -61,7 +61,7 @@ const NODES: FlowNode[] = [
   { id: 'n-proposal', Icon: FileText,      title: 'Outcome A',      subtitle: 'Next action',       x: 56,  y: 268 },
   { id: 'n-won',      Icon: Trophy,        title: 'Won',            subtitle: 'Goal reached',      x: 240, y: 268, variant: 'win' },
   { id: 'n-maybe',    Icon: Hourglass,     title: 'Outcome B',      subtitle: 'Not ready yet',     x: 468, y: 268 },
-  { id: 'n-nurture',  Icon: Heart,         title: 'AI Step',        subtitle: 'Follow-up drip',    x: 652, y: 268 },
+  { id: 'n-nurture',  Icon: Heart,         title: 'Draft Reply',    subtitle: 'Review before send', x: 652, y: 268 },
   { id: 'n-lost',     Icon: XCircle,       title: 'Lost',           subtitle: 'Closed out',        x: 866, y: 268, variant: 'lost' },
 ]
 
@@ -340,7 +340,7 @@ export default function Autopilot({ compact = false, maxScale = 1 }: AutopilotPr
       ref={sectionRef}
       className={compact ? 'autopilot autopilot--compact' : 'autopilot'}
       id="autopilot"
-      aria-label={compact ? 'Example automation flow, end to end' : undefined}
+      aria-label={compact ? 'Inquiry workflow diagram' : undefined}
       aria-labelledby={compact ? undefined : 'autopilot-heading'}
       data-reveal
     >

@@ -49,7 +49,7 @@ export const profile: Profile = {
   name: 'Ed David Verzola',
   firstName: 'Ed',
   handle: 'Philippines / Worldwide',
-  role: 'AI Automation & Integrations',
+  role: 'Automation, Web Apps & Cloud',
   avatarSrc: '/profile.png',
   verifiedLabel: '',
   email: 'dverzola26@gmail.com',
@@ -62,9 +62,9 @@ export const profile: Profile = {
   ],
   // The intro types this line, then flies it into the Home headline.
   // Keep it short: two halves, 5-8 words total.
-  displayName: { line1: 'Clear inquiries.', line2: 'Simpler follow-ups.' },
+  displayName: { line1: 'Inquiry and follow-up systems', line2: 'for small businesses.' },
   hero: {
-    body: 'I help small businesses organize inquiries and simplify follow-ups, backed by cloud consulting experience.',
+    body: 'I build n8n workflows, API integrations and small web tools for small businesses. My background is in cloud consulting.',
     portraitSrc: '/ed-portrait-transparent.png',
     portraitAlt: 'Ed David Verzola',
   },

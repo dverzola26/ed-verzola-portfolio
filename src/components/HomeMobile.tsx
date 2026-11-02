@@ -47,10 +47,10 @@ export function HomeStats() {
 }
 
 const TILES = [
-  { n: '01', label: 'Projects', to: '/projects', title: 'Automation and web work', desc: 'Personal projects with a clear purpose.', img: '/projects/inquiry-demo.webp' },
-  { n: '02', label: 'Services', to: '/services', title: 'Start with one workflow', desc: 'A defined scope and documented handover.', Icon: Stack },
-  { n: '03', label: 'About', to: '/about', title: 'Cloud experience, practical delivery', desc: 'How I approach automation and consulting.', Icon: User },
-  { n: '04', label: 'Contact', to: '/contact', title: 'Let’s scope your first workflow.', desc: 'Tell me what you want to simplify.', Icon: ChatCircle },
+  { n: '01', label: 'Projects', to: '/projects', title: 'Automation and web work', desc: 'Personal projects and the problems behind them.', img: '/projects/inquiry-demo.webp' },
+  { n: '02', label: 'Services', to: '/services', title: 'Start with one workflow', desc: 'See what I can build and how I work.', Icon: Stack },
+  { n: '03', label: 'About', to: '/about', title: 'About my work', desc: 'My cloud background and approach to automation.', Icon: User },
+  { n: '04', label: 'Contact', to: '/contact', title: 'Tell me about the task', desc: 'What is taking too much manual work?', Icon: ChatCircle },
 ] as const
 
 export function HomeExplore() {

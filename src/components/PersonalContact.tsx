@@ -63,7 +63,7 @@ export default function PersonalContact() {
           What would you like to simplify?
         </h1>
         <p className="pgrid__lede">
-          Tell me about your inquiry or follow-up process. We can discuss a focused project and its scope.
+          Describe the task that is taking too much manual work. We can decide whether it fits a small first project.
         </p>
         <a className="home__cta native-mobile-contact" href="https://wa.me/639171420582" target="_blank" rel="noopener noreferrer"><WhatsappLogo size={20} aria-hidden="true"/>Chat on WhatsApp<ArrowUpRight size={16} aria-hidden="true"/></a>
       </header>
@@ -74,9 +74,7 @@ export default function PersonalContact() {
           <div className="cgrid__aside-head">
             <span className="cgrid__eyebrow">FAQs</span>
             <h2 className="cgrid__aside-title" id="contact-faq">
-              Quick answers.
-              <br />
-              <span>Choose how to get in touch.</span>
+              Before you get in touch.
             </h2>
           </div>
 
@@ -163,12 +161,12 @@ export default function PersonalContact() {
               </label>
 
               <label className="cgrid__field cgrid__field--grow">
-                <span className="cgrid__label">Tell me more about your business</span>
+                <span className="cgrid__label">What do you want to improve?</span>
                 <textarea
                   name="message"
                   required
                   maxLength={MAX_MESSAGE}
-                  placeholder="What do you need help with? What are you working with today?"
+                  placeholder="What happens now, which tools are involved, and what result do you need?"
                 />
               </label>
 

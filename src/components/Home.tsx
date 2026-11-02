@@ -45,14 +45,14 @@ export default function Home() {
 
           {!phone && (
             <a className="home__cta" href="https://wa.me/639171420582" target="_blank" rel="noreferrer">
-              Discuss your workflow
+              Tell me about your workflow
               <ArrowUpRight size={16} weight="bold" aria-hidden="true" />
             </a>
           )}
         </div>
 
         <p className="home__lede">{hero.body}</p>
-        {phone && <><a className="home__cta" href="https://wa.me/639171420582" target="_blank" rel="noopener noreferrer">Discuss your workflow<ArrowUpRight size={16} aria-hidden="true"/></a><HomeStats /></>}
+        {phone && <><a className="home__cta" href="https://wa.me/639171420582" target="_blank" rel="noopener noreferrer">Tell me about your workflow<ArrowUpRight size={16} aria-hidden="true"/></a><HomeStats /></>}
       </div>
 
       {/* Two plates, not one. The tools band and the bento are different

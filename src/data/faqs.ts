@@ -1,8 +1,8 @@
 export type QA = {q:string;a:string}
 export const FAQS:QA[]=[
-{q:'What can you help with?',a:'Inquiry capture, follow-up workflows, integrations, custom web apps and cloud architecture reviews. The final scope is agreed before work starts.'},
-{q:'Are these client projects?',a:'The work shown is self-initiated portfolio work. Paid client case studies will be added only when I have permission to share them.'},
-{q:'How is pricing agreed?',a:'Share your workflow, tools, timeline and budget. Deliverables, dependencies and third-party costs are scoped before a quote is agreed.'},
-{q:'Where are you based?',a:'The Philippines, UTC+8. Remote work and meeting times are agreed with local and international clients.'},
-{q:'Does this form send automatically?',a:'With no backend connected, it opens your email app with a draft. You review and send it yourself. You can also email dverzola26@gmail.com directly.'},
+{q:'What can you help with?',a:'I build inquiry and follow-up workflows, connect tools through APIs and webhooks, make small web apps, and review cloud architecture. We agree on the exact work before the project starts.'},
+{q:'Are these client projects?',a:'The projects shown here are self-initiated. I’ll add paid client work when I have permission to share it.'},
+{q:'How do you price a project?',a:'Tell me about the workflow, the tools involved, your timeline and your budget. I’ll list the deliverables, dependencies and external costs before sending a quote.'},
+{q:'Where are you based?',a:'I’m in the Philippines, UTC+8, and work remotely with clients here and abroad. We agree on meeting times before the project starts.'},
+{q:'Does this form send automatically?',a:'The form opens an email draft in your email app. You review and send it yourself, or email me directly at dverzola26@gmail.com.'},
 ]

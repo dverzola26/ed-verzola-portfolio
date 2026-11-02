@@ -32,21 +32,21 @@ const STAGES: Stage[] = [
   {
     index: '01',
     label: 'Understand',
-    body: 'Map your workflow, agree on scope and identify dependencies.',
+    body: 'Show me the task, the tools involved and what a useful result looks like.',
     Icon: MagnifyingGlass,
     chips: ['Workflow', 'Scope', 'Dependencies', 'Quote'],
   },
   {
     index: '02',
     label: 'Build & review',
-    body: 'Build the agreed flow and review realistic test scenarios.',
+    body: 'I build the agreed workflow and test it with realistic examples.',
     Icon: Wrench,
     chips: ['Testing', 'Review', 'Documentation'],
   },
   {
     index: '03',
     label: 'Hand over',
-    body: 'Document the solution and agree on any ongoing support.',
+    body: 'You get documentation and a walkthrough. We can agree separately on ongoing support.',
     Icon: BookOpen,
     chips: ['Documentation', 'Walkthrough', 'Support scope'],
   },
@@ -70,11 +70,11 @@ type Service = {
 }
 
 const SERVICES: Service[] = [
-{index:'01',title:'Inquiry capture & follow-up',description:'One form, one lead tracker and an owner alert, scoped to your business.',chip:'Starter scope',logos:[N8N],bullets:['Structured inquiry capture','Duplicate and review checks','Handover notes']},
-{index:'02',title:'APIs & integrations',description:'Connect your tools or troubleshoot a focused workflow.',chip:'Scoped integration',logos:[N8N],bullets:['Field mapping','Failure scenarios','Provider costs identified']},
-{index:'03',title:'Custom apps & dashboards',description:'A small tool for a spreadsheet-heavy business task.',chip:'Focused web app',logos:[REACT,TAILWIND],bullets:['Agreed screens','Essential workflow','Tested handover']},
-{index:'04',title:'Cloud architecture review',description:'Review architecture, reliability and cost considerations.',chip:'Consulting',logos:['/icons/azure.svg'],bullets:['Current-state review','Prioritized recommendations','Defined deliverable']},
-{index:'05',title:'AI-assisted inquiry drafts',description:'An optional response-drafting step with human review.',chip:'Review first',logos:[OPENAI],bullets:['Agreed data boundaries','Human approval','No automatic promises']},
+{index:'01',title:'Inquiry capture and follow-up',description:'A form feeds one lead tracker and alerts the person who needs to respond.',chip:'Starter project',logos:[N8N],bullets:['Inquiry form','Duplicate checks','Handover notes']},
+{index:'02',title:'APIs and integrations',description:'I connect tools through APIs and webhooks, or troubleshoot an existing n8n workflow.',chip:'Integration',logos:[N8N],bullets:['Field mapping','Error handling','External costs listed']},
+{index:'03',title:'Custom apps and dashboards',description:'A small web tool for a task your team currently manages in spreadsheets.',chip:'Web app',logos:[REACT,TAILWIND],bullets:['Agreed screens','Core workflow','Handover test']},
+{index:'04',title:'Cloud architecture review',description:'I review Azure or AWS architecture and give you a short action list.',chip:'Consulting',logos:['/icons/azure.svg'],bullets:['Current setup','Priority fixes','Written findings']},
+{index:'05',title:'AI-assisted inquiry drafts',description:'Add a response draft to an inquiry workflow, with a person approving it before anything is sent.',chip:'Manual approval',logos:[OPENAI],bullets:['Data limits','Review step','Tone and content rules']},
 ]
 
 /** The tool marks, stacked horizontally on white tiles (same as Projects). */
@@ -101,7 +101,7 @@ export default function ServicesGrid() {
           Start with one workflow.
         </h1>
         <p className="pgrid__lede">
-          Focused builds for small businesses. Final scope, dependencies and quote are agreed before implementation.
+          For a first project, we agree on the problem, deliverables, dependencies and price before I build anything.
         </p>
       </header>
 
@@ -112,12 +112,10 @@ export default function ServicesGrid() {
           <div className="sgrid__method-copy">
             <span className="sgrid__method-eyebrow">How we work</span>
             <h2 className="sgrid__method-title" id="method-title">
-              Understand. Build. Hand over.
-              <br />
-              <span>Direct collaboration at each step.</span>
+              You work directly with me from scope to handover.
             </h2>
             <p className="sgrid__method-sub">
-              Work directly with the person scoping and building your solution.
+              I handle the scoping and the build, with review points agreed in advance.
             </p>
           </div>
 
@@ -146,8 +144,8 @@ export default function ServicesGrid() {
         {/* Five cards, each carrying the marks of what it is built with. */}
         <div className="sgrid__offers">
           <div className="sgrid__offers-head">
-            <h2 className="sgrid__offers-title">What we can scope together.</h2>
-            <p className="sgrid__offers-sub">A focused first project, with clear deliverables.</p>
+            <h2 className="sgrid__offers-title">Possible first projects</h2>
+            <p className="sgrid__offers-sub">We narrow the work before I quote.</p>
           </div>
           <ul className="bento sgrid__services" role="list">
             {SERVICES.map((s) => (
@@ -179,10 +177,10 @@ export default function ServicesGrid() {
         <div className="sgrid__flow">
           <header className="sgrid__flow-head">
             <div className="sgrid__flow-copy">
-              <span className="sgrid__flow-eyebrow">Typical workflow</span>
-              <h2 className="sgrid__flow-title">From inquiry to a clear next step.</h2>
+              <span className="sgrid__flow-eyebrow">Inquiry workflow</span>
+              <h2 className="sgrid__flow-title">A request comes in. The next action stays visible.</h2>
               <p className="sgrid__flow-sub">
-                Capture the request, check the details, notify the right person and keep follow-up visible. The final workflow is adapted to your business and tools.
+                The workflow checks the details, notifies the owner and tracks follow-up. I adapt each step to your tools and process.
               </p>
             </div>
             <ul className="sgrid__flow-tools" role="list" aria-label="Illustrated tools in this concept">

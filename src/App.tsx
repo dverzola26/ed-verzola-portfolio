@@ -43,7 +43,7 @@ export default function App() {
   useEffect(() => {
     panelRef.current?.scrollTo({ top: 0, behavior: 'auto' })
     window.scrollTo({ top: 0, behavior: 'instant' })
-    const titles: Record<string, string> = { '/': 'AI Automation & Integrations', '/projects': 'Projects', '/services': 'Services', '/about': 'About', '/contact': 'Contact' }
+    const titles: Record<string, string> = { '/': 'Automation, Web Apps & Cloud', '/projects': 'Projects', '/services': 'Services', '/about': 'About', '/contact': 'Contact' }
     document.title = `${titles[pathname] ?? 'Portfolio'} — Ed David Verzola`
     panelRef.current?.focus({ preventScroll: true })
   }, [pathname])
