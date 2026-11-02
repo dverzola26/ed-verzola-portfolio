@@ -39,3 +39,10 @@
 .demo-record h3{font-size:16px;margin:0;line-height:1.5}
 @media(min-width:1100px){.rail__copy{padding-left:52px;padding-bottom:0}}
 @media(min-width:1100px) and (max-height:760px){.shell__panel[data-fixed='true']{overflow-y:auto}.home{height:auto;min-height:800px}}
+
+/* About portrait keeps its natural aspect ratio; never crop the face to a banner. */
+.agrid .agrid__glass{height:auto;grid-template-rows:auto;min-height:560px}
+.agrid .agrid__portrait{margin:0;align-self:center;justify-content:center;align-items:center;height:auto;min-width:0;width:100%}
+.agrid .agrid__portrait img{width:100%;height:auto;max-width:440px;max-height:none;object-fit:contain;object-position:center;mask:none;-webkit-mask:none;border-radius:0}
+.bento__card--method .native-points{margin-top:auto}
+@media(max-width:1099px){.agrid .agrid__glass{min-height:0}.agrid .agrid__portrait{max-width:320px;margin-inline:auto}.agrid .agrid__portrait img{width:100%;height:auto;max-height:none}}

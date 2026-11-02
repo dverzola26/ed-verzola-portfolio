@@ -57,7 +57,7 @@ export const profile: Profile = {
   // Pick any icon from https://phosphoricons.com and import it above.
   stats: [
     { value: 'Cloud', label: 'Consulting background', Icon: Briefcase },
-    { value: 'n8n', label: 'Learning focus', Icon: Robot },
+    { value: 'n8n', label: 'Workflow automation', Icon: Robot },
     { value: 'UTC+8', label: 'Philippines', Icon: Clock },
   ],
   // The intro types this line, then flies it into the Home headline.
@@ -65,7 +65,7 @@ export const profile: Profile = {
   displayName: { line1: 'Clear inquiries.', line2: 'Simpler follow-ups.' },
   hero: {
     body: 'I help small businesses organize inquiries and simplify follow-ups, backed by cloud consulting experience.',
-    portraitSrc: '/profile.png',
+    portraitSrc: '/ed-portrait-transparent.png',
     portraitAlt: 'Ed David Verzola',
   },
   socials: [

@@ -41,7 +41,6 @@ export const tools: Tool[] = [
   {name:'Codex',iconPath:'/icons/codex.svg',color:'#222222'},
   {name:'Claude',iconPath:'/icons/claude-code-logo.png'},
   {name:'n8n',iconPath:'/icons/ai/n8n.svg'},
-  {name:'Zapier',iconPath:'/icons/ai/zapier.svg'},
   {name:'Azure',iconPath:'/icons/azure.svg'},
 ]
 

@@ -103,3 +103,9 @@ npm run dev -- --host 127.0.0.1 --port 3000
 Before switching computers, commit and push your changes. In the other checkout, run `git pull --ff-only` before editing, then `npm ci` if dependencies changed. Use branches and pull requests for larger changes.
 
 Dependencies, generated `dist`, logs, and local environment files are excluded from Git. The `.env.example` file contains only blank configuration. Uploading this repository does not deploy the website.
+
+## Portrait and Home refinement — 2 November 2026
+
+The toolkit strip shows Azure, Codex, Claude and n8n. n8n is presented as the automation focus, with service-focused copy and no learning labels. Zapier is omitted. The Home bio/photo card is replaced with a process card, while mobile Explore links to Contact rather than repeating the photo.
+
+The About portrait uses `public/ed-portrait-transparent.png`, generated with the built-in image tool from the original `public/profile.png`. The original remains preserved and is used for the small identity avatar. Image prompt: “Remove only the gray-blue background to genuine transparency; preserve Ed's identity, expression, hair, suit and photographic detail; show the entire head and shoulders without cropping, with no added background or text.” The About layout now uses the image's natural aspect ratio and a contained, width-limited portrait on mobile and desktop.
